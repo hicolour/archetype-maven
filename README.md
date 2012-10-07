@@ -11,19 +11,24 @@ The archetypes currently available are:
 Usage
 =====
 
-\# Checkout project<br/>
-	git clone git@github.com:hicolour/com.github.hicolour.archetype.git
+Checkout project
 
-\# Change into project directory<br/>
-	cd com.github.hicolour.archetype
+    git clone git@github.com:hicolour/com.github.hicolour.archetype.git
 
-\# Build archetypes and install into the local maven repository<br/>
-	mvn install
+Change into project directory
 
-\# Check that the archetypes have been added to the local archetype catalogue (which resides in your .m2 directory)<br/>
-	cat ~/.m2/archetype-catalog.xml
+    cd com.github.hicolour.archetype
 
-\# Create a new project using the archetype (follow the prompts)<br/>
-	mvn archetype:generate -DarchetypeCatalog=local
+Build archetypes and install into the local maven repository
+
+    mvn install
+
+Check that the archetypes have been added to the local archetype catalogue (which resides in your .m2 directory)
+
+    cat ~/.m2/archetype-catalog.xml
+
+Create a new project using the archetype (follow the prompts)
+
+    mvn archetype:generate -DarchetypeCatalog=local
 
 
