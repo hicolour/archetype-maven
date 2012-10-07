@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.hicolour.archetype</groupId>
+  <artifactId>com.github.hicolour.archetype</artifactId>
+
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>maven-archetype</packaging>
+  <name>${project.artifactId}</name>
+  <description>Archetype parrent</description>
+  <inceptionYear>2012</inceptionYear>
+  <licenses>
+      <license>
+          <name>The Apache Software License, Version 2.0</name>
+          <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+          <distribution>repo</distribution>
+      </license>
+  </licenses>
+  <developers>
+  	<developer>
+  		<id>hicolour</id>
+  		<name>Marek Prochera</name>
+  	</developer>
+  </developers>
+  <scm>
+		<connection>scm:git:git@github.com:hicolour/${project.artifactId}.git</connection>
+		<url>scm:git:git@github.com:hicolour/${project.artifactId}.git</url>
+		<developerConnection>scm:git:git@github.hicolour/${project.artifactId}.git</developerConnection>
+  </scm>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>${archetype.version}</version>
+      </extension>
+    </extensions>
+    <plugins>
+      <plugin>
+        <artifactId>maven-archetype-plugin</artifactId>
+        <version>${archetype.version}</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+  <properties>
+  	<archetype.version>2.1</archetype.version>
+  </properties>
+</project>
