@@ -6,7 +6,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <requiredProperties>
         <requiredProperty key="package">
-            <defaultValue>${artifactId}</defaultValue>
+            <defaultValue>${groupId}.${artifactId}</defaultValue>
         </requiredProperty>
     </requiredProperties>
     <fileSets>

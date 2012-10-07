@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.prochera</groupId>
-        <artifactId>archetype</artifactId>
+        <groupId>com.prochera.archetype</groupId>
+        <artifactId>archetype-maven</artifactId>
         <version>1.0.0</version>
     </parent>
 
     <groupId>com.prochera.archetype</groupId>
-    <artifactId>java</artifactId>
+    <artifactId>archetype-maven-java</artifactId>
     <packaging>maven-archetype</packaging>
     <name>${project.groupId}.${project.artifactId}</name>
 
