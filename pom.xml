@@ -15,13 +15,13 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.github.hicolour.archetype</groupId>
-  <artifactId>com.github.hicolour.archetype</artifactId>
+  <groupId>com.prochera</groupId>
+  <artifactId>archetype</artifactId>
 
   <version>1.0.0</version>
   <packaging>pom</packaging>
-  <name>${project.artifactId}</name>
-  <description>Archetype parrent</description>
+  <name>${project.groupId}.${project.artifactId}</name>
+  <description>Archetype</description>
   <inceptionYear>2012</inceptionYear>
   <licenses>
       <license>
@@ -63,6 +63,6 @@
   </properties>
 
 	<modules>
-        <module>java</module>
+        <module>java-archetype</module>
     </modules>
 </project>
