@@ -16,11 +16,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.prochera.archetype</groupId>
-  <artifactId>maven</artifactId>
+  <artifactId>archetype-maven</artifactId>
 
   <version>1.0.0</version>
   <packaging>pom</packaging>
-  <name>${project.groupId}.${project.artifactId}</name>
+  <name>${project.artifactId}</name>
   <description>Archetype</description>
   <inceptionYear>2012</inceptionYear>
   <licenses>
