@@ -1,4 +1,4 @@
-com.github.hicolour.archetype
+archetype-maven
 =============================
 
 This repository contains maven [archehtypes] (http://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
