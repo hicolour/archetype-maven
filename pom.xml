@@ -63,6 +63,6 @@
   </properties>
 
 	<modules>
-        <module>java-archetype</module>
+        <module>archetype-maven-java</module>
     </modules>
 </project>

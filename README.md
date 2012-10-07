@@ -13,11 +13,11 @@ Usage
 
 Checkout project
 
-    git clone git@github.com:hicolour/com.github.hicolour.archetype.git
+    git clone git@github.com:hicolour/archetype-maven.git
 
 Change into project directory
 
-    cd com.github.hicolour.archetype
+    cd archetype-maven
 
 Build archetypes and install into the local maven repository
 
