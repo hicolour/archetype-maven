@@ -6,7 +6,7 @@ i.e. templates, for creating new projects.
 
 The archetypes currently available are:
 
-    java:  java, junit, mockito, hamcrest
+    archetype-maven-java:  java, junit, mockito, hamcrest
 
 Usage
 =====
