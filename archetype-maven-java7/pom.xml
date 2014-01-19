@@ -9,10 +9,10 @@
     </parent>
 
     <groupId>com.prochera.archetype</groupId>
-    <artifactId>archetype-maven-java</artifactId>
+    <artifactId>archetype-maven-java7</artifactId>
     <packaging>maven-archetype</packaging>
-    <name>${project.artifactId}</name>
 
-    <description>Simple Java project</description>
+
+    <description>Simple Java 7 project</description>
 
 </project>

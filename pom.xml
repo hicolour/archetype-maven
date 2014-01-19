@@ -20,7 +20,7 @@
 
   <version>1.0.0</version>
   <packaging>pom</packaging>
-  <name>${project.artifactId}</name>
+  <name>archetype-maven</name>
   <description>Archetype</description>
   <inceptionYear>2012</inceptionYear>
   <licenses>
@@ -63,6 +63,8 @@
   </properties>
 
 	<modules>
-        <module>archetype-maven-java</module>
+        <module>archetype-maven-java7</module>
+        <module>archetype-maven-java8</module>
+        <module>archetype-maven-scala</module>
     </modules>
 </project>
