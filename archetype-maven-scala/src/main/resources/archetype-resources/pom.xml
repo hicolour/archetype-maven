@@ -12,7 +12,9 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <encoding>UTF-8</encoding>
-    <scala.version>2.11.7</scala.version>
+    <scala.major-version>2.11</scala.major-version>
+    <scala.minor-version>6</scala.minor-version>
+    <scala.version>${scala.major-version}.${scala.minor-version}</scala.version>
   </properties>
 
   <dependencies>
@@ -21,7 +23,7 @@
       <artifactId>scala-library</artifactId>
       <version>$scalaVersion</version>
     </dependency>
-
+    
     <!-- Test -->
     <dependency>
       <groupId>junit</groupId>
@@ -29,18 +31,29 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
+
+     <dependency>
       <groupId>org.specs2</groupId>
-      <artifactId>specs2_$scalaVersion</artifactId>
+      <artifactId>specs2-core_${scala.major-version}</artifactId>
       <version>3.6.4</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.scalatest</groupId>
-      <artifactId>scalatest_$scalaVersion</artifactId>
-      <version>2.2.4</version>
+
+     <dependency>
+      <groupId>org.scalaz.stream</groupId>
+      <artifactId>scalaz-stream_${scala.major-version}</artifactId>
+      <version>0.7.3a</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.scalatest</groupId>
+      <artifactId>scalatest_${scala.major-version}</artifactId>
+      <version>3.0.0-SNAP5</version>
+      <scope>test</scope>
+    </dependency>
+
+
   </dependencies>
 
   <build>
@@ -57,13 +70,6 @@
               <goal>compile</goal>
               <goal>testCompile</goal>
             </goals>
-            <configuration>
-              <args>
-                <arg>-make:transitive</arg>
-                <arg>-dependencyfile</arg>
-                <arg>${project.build.directory}/.scala_dependencies</arg>
-              </args>
-            </configuration>
           </execution>
         </executions>
       </plugin>
